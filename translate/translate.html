@@ -1,0 +1,51 @@
+<!--/*
+/Matthew Shehan
+//mshehan@my.smccd.edu
+//CIS 
+//114 OL
+//translate.html
+//assignment 7
+// 05-13-2016
+ */-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Translate Matthew Shehan</title>
+    <link rel="stylesheet" href="css/translate.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/translate.js"></script>
+</head>
+
+<body>
+    <style>
+        .ui-icon-myicon:after {
+            background-image: url("icon/translate.png");
+            /* Make your icon fit */
+            background-size: 18px 18px;
+        }
+    </style>
+    <div data-role="page" data-theme="d">
+        <div data-role="header">Let's get translating! </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-field-contain">
+                <label for="source_lang">Source Language:</label>
+                <textarea cols="40" rows="8" name="source_lang" id="source_lang">Enter the phrase you'd like to translate here</textarea>
+            </div>
+            <div class="ui-field-contain">
+                <label for="target_lang">Target Language:</label>
+                <textarea cols="40" rows="8" name="target_lang" id="target_lang" readonly></textarea>
+            </div>
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-myicon ui-btn-icon-right" id="translate">Translate!</a>
+            
+        </div>
+        <!--end main content-->
+    </div>
+</body>
+
+</html>
